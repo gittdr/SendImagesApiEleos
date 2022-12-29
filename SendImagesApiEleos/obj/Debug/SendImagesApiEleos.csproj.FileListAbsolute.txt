@@ -1,0 +1,12 @@
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\bin\Debug\SendImagesApiEleos.exe.config
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\bin\Debug\SendImagesApiEleos.exe
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\bin\Debug\SendImagesApiEleos.pdb
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.exe
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.pdb
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\bin\Debug\SendImagesApiEleos.exe.manifest
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\bin\Debug\SendImagesApiEleos.application
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.exe.manifest
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.application
