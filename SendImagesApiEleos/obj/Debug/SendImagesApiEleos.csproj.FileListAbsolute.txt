@@ -10,3 +10,5 @@ C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\bin\Debug\Sen
 C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\bin\Debug\SendImagesApiEleos.application
 C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.exe.manifest
 C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.application
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\bin\Debug\Renci.SshNet.dll
+C:\Users\Lenovo\source\repos\SendImagesApiEleos\SendImagesApiEleos\obj\Debug\SendImagesApiEleos.csproj.CopyComplete

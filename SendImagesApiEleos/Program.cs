@@ -1,4 +1,5 @@
-﻿using SendImagesApiEleos.Models;
+﻿using Renci.SshNet;
+using SendImagesApiEleos.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,6 +16,31 @@ namespace SendImagesApiEleos
         {
             try
             {
+                var host = "10.176.167.171";
+                var port = 22;
+                var username = "pages";
+                var password = "single";
+                var uploadFile = @"C:\Administración\ApiEleos\Images\ORD_BAJ_127777_UNK_101570258.tif";
+
+                using (var client = new SftpClient(host, port, username, password))
+                {
+                    client.Connect();
+                    if (client.IsConnected)
+                    {
+                        //Debug.WriteLine("I'm connected to the client");
+
+                        using (var fileStream = new FileStream(uploadFile, FileMode.Open))
+                        {
+
+                            client.BufferSize = 4 * 1024; // bypass Payload error large files
+                            client.UploadFile(fileStream, Path.GetFileName(uploadFile));
+                        }
+                    }
+                    else
+                    {
+                        //Debug.WriteLine("I couldn't connect");
+                    }
+                }
                 Program obj = new Program();
                 obj.SendImage();
             }
@@ -39,7 +65,32 @@ namespace SendImagesApiEleos
                     string SourceFile = @"\\10.223.208.41\Users\Administrator\Documents\ImagesEleos\" + itema.Name;
                     string File_name = itema.Name.Replace(".tif", "");
                     string segmento = File_name;
-                    facLabControler.enviarNotificacion(segmento, SourceFile, segmento);
+                    var host = "10.176.167.171";
+                    var port = 22;
+                    var username = "pages";
+                    var password = "single";
+                    //var uploadFile = @"C:\Administración\ApiEleos\Images\ORD_BAJ_1237089_UNK_101286898.tif";
+
+                    using (var client = new SftpClient(host, port, username, password))
+                    {
+                        client.Connect();
+                        if (client.IsConnected)
+                        {
+                            //Debug.WriteLine("I'm connected to the client");
+
+                            using (var fileStream = new FileStream(SourceFile, FileMode.Open))
+                            {
+
+                                client.BufferSize = 10 * 1024; // bypass Payload error large files
+                                client.UploadFile(fileStream, Path.GetFileName(SourceFile));
+                            }
+                        }
+                        else
+                        {
+                            //Debug.WriteLine("I couldn't connect");
+                        }
+                    }
+                    //facLabControler.enviarNotificacion(segmento, SourceFile, segmento);
                     itema.Delete();
                 }
             }
